@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding:0;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {	
+	margin: 0;
+	padding: 0;
+	background-image:url("images/pexels-luis-quintero-2774556web.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+div, header, nav, main, aside, article, footer {
+	display: block;
+	box-sizing: border-box;
+}
+#container {
+	position: relative;
+	width: 100%;
+	min-height: 750px;
+	margin: auto;
+}
+header {
+	position: relative;
+	width: 100%;
+	min-height: 150px;
+	margin: auto;
+	background-color: #fff;
+}
+#logo {
+	max-width: 30%;
+	height: auto;
+	padding-top: 15px;
+	padding-left: 25px;
+	cursor: pointer;
+}
+#icons-div {
+	float: right;
+	margin-top: 23px;
+	margin-right: 70px;
+}
+.icons {
+	padding-right: 10px;
+	cursor: pointer;
+}
+#menu {
+	position: fixed;
+	z-index: 900;
+	width: 30px;
+	height: 20px;
+	top: 30px;
+	padding:0;
+	right: 30px;
+	cursor: pointer;
+}
+#menu-bar {
+	position: absolute;
+	width: 300px;
+	min-height: 400px;
+	top: 0;
+	right: 0;
+	z-index: 800;
+}
+.bar {
+	width: 100%;
+	height: 7px;
+	background-color: #009FE3;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1 {
+	transform: translateY(-4px);
+}
+#bar3 {
+	transform: translateY(4px);
+}
+.change .bar {
+	background-color: black;
+}
+.change #bar1 {
+	transform: translateY(6px) rotateZ(45deg);
+}
+.change #bar2 {
+	opacity: 0;
+}
+.change #bar3 {
+	transform: translateY(-8px) rotate(-45deg);
+}
+.nav {
+	background:linear-gradient(45deg, rgba(0,159,227,0.95), rgba(219,51,183,0.95));
+	width: 250px;
+}
+.wrapper::after, .clearfix::after, header::after, .wrapper_home::after {
+	content: "";
+    clear: both;
+    display: table;
+}
+.wrapper {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 2px;
+	width:100%;
+	min-height: 50px;
+	z-index: 800;
+	background-color: black;
+	margin: 0 auto;
+	display: none;
+}
+.wrapper ul li {
+	position: relative;
+	width:170px;
+	height: 50px;
+	z-index:800;
+	background: #000000;
+	float: left;
+}
+.wrapper ul ul {
+	display: none;
+}
+.wrapper ul li:hover > ul {
+	display: block;
+}
+#slider {
+	position: relative;
+	width: 100%;
+	min-height: 50px;
+	background-color: #FFF;
+}
+#iframe_slider {
+	position: relative;
+	width: 100%;
+	min-height: 250px;
+	margin:0;
+	border-width: 0px;
+}
+#slider img {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clearfix {
+	position: relative;
+	width: 100%;
+	min-height: 150px;
+	margin: auto;
+}
+.wrapper2 {
+	position: relative;
+	width: 100%;
+	min-height: 150px;
+	float: left;
+}
+article {
+	background-color:rgba(0,0,0,0.75);
+}
+article, #footer_midden {
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	padding: 20px;
+}
+#aside_l, #footer_links {
+	position: relative;
+	width: 20%;
+	min-height: 100px;
+	float: left;
+	padding: 20px;
+	display: none;
+}
+#aside_r, #footer_rechts {
+	position: relative;
+	width: 20%;
+	min-height: 100px;
+	float: left;
+	padding: 20px;
+	display: none;
+}
+#footer {
+	background-color: #000000;
+}
+#footer_mobile {
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+}
+#wrapper_footer {
+	position: relative;
+	width: 67%;
+	min-height: 100px;
+	float: left;
+	display: none;
+}
+#footer1 {
+	position: relative;
+	width: 49%;
+	min-height: 100px;
+	float: left;
+	display:none;
+}
+#footer2 {
+	position: relative;
+	width: 51%;
+	min-height: 100px;
+	float: right;
+	display:none;
+}
+#footer3 {
+	position: relative;
+	width: 33%;
+	min-height: 100px;
+	float: left;
+	display:none;
+}
+#banner {
+	position: relative;
+	width: 100%;
+	min-height: 265px;
+	margin:0;
+	border-width: 0px;
+}
+@media screen and (min-width:871px){
+	#menu-bar {
+		display: none;
+	}
+	.wrapper{
+		display: block;
+	}
+	#aside_l, #footer_links, #aside_r, #footer_rechts {
+		display: block;
+	} 
+	.wrapper2 {
+		width: 80%;
+	}
+	article {
+		width: 80%;
+	}
+	#slider {
+		width: 64%;
+		margin-left:auto;
+	    margin-right:20%;
+	}
+	article, #footer_midden {
+		width: 80%;
+		float: right;
+	}
+	#footer_mobile {
+		display: none;
+	}
+	#wrapper_footer, #footer1, #footer2, #footer3 {
+	    display: block;
+    }
+}
+@media screen and (min-width:1500px){
+	.wrapper {
+		padding-left: 40%;
+	}
+}

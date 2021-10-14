@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'Righteous Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Righteous Regular'), url('Righteous-Regular.woff') format('woff');
+}
+body {
+	font-size:100%;
+	font-family: verdana, arial;
+}
+.nav {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding-left: 20px;
+	margin: 0px;
+	font-size: 1.4em;
+	transition: 0.3s ease;
+	display: none;
+}
+.nav li {
+	list-style-type: none;
+	padding: 20px 0 20px 0;
+}
+.nav li a {
+	font-family: 'Righteous Regular';
+	color: black;
+	text-decoration: none;
+}
+.nav a:hover, .wrapper a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	transition: 1.5s ease;
+	}
+.change {
+	display: block;
+}
+.wrapper ul {
+	list-style: none;
+}
+.wrapper ul li {
+	font-family: 'Righteous Regular';
+	text-align: center;
+	line-height: 50px;
+}
+.wrapper ul li:hover {
+	background:linear-gradient(45deg, rgba(0,159,227,0.90), rgba(219,51,183,0.90));
+	transition: 0.3s ease;
+}
+.wrapper a {
+	font-size: 18px;
+	text-decoration: none;
+}
+.wrapper li a {
+	font-size: 15px bold;
+	color: #E6007E;
+}
+h1, h2, h3 {
+	font-family: 'Righteous Regular';
+	letter-spacing: 2px;
+}
+h1 {
+	font-size: 2.4em;
+	color: #009FE3;
+	margin-bottom: 2,5px;
+	text-align: center;
+}
+h2 {
+	color: #E6007E;
+	font-size: 1.6em;
+}
+h3 {
+	color: #DB33B7;
+	font-size: 1.2em;
+}
+footer h3 {
+	color: #E6007E;
+}
+h4 {
+	color: #FFF;
+	font-size: 0.6em;
+}
+p {
+	color: white;
+	font-size: 1em;
+	
+}
+#footer_mobile {
+	text-align: center;
+}
+#footer1 p, #footer2 p, #footer3 p, #footer_mobile{
+	font-size: 13px;
+}
+h4 a, #footer1 a, #footer2 a, #footer3 a, #footer_mobile a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px;
+}
+h4 a:hover, #footer1 a:hover, #footer2 a:hover, #footer3 a:hover, #footer_mobile a:hover {
+	color: #009FE3;
+	text-decoration: underline;
+	pointer: cursor;
+	transition: 1s ease;
+}
+h4 a:active {
+	color:  #009FE3;
+}
+#footer2 img:hover, #footer_mobile img:hover {
+	opacity: 80%;
+	transition: 1s ease;
+}
+
+
+
+
